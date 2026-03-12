@@ -72,17 +72,17 @@ onMounted(() => {
     container: 'map',
     center: [2.04, 42.51],
     zoom: 15,
-    pitch: 60,
+    pitch: 0,
     maplibreLogo: true,
     style: `https://api.maptiler.com/maps/019cdf8f-4103-7c1d-b40f-ee87f04dc387/style.json?key=${api_key}`,
   });
 
   watch(geojsonData, () => {
     renderTrack(map, geojsonData.value);
-    const [minLng, minLat, maxLng, maxLat] = bbox(geojsonData.value.data as GeoJSON.GeoJSON);
-    const bounds: maplibregl.LngLatBoundsLike = [[minLng, minLat], [maxLng, maxLat]];
 
-    map.fitBounds(bounds, { padding: 50 });
+    const [minLng, minLat, maxLng, maxLat] = bbox(geojsonData.value.data as GeoJSON.GeoJSON);
+
+    map.fitBounds([minLng, minLat, maxLng, maxLat], { padding: 50, pitch: 0 });
   });
 
   watch(isSatelliteBasemap, () => {
