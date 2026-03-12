@@ -16,6 +16,7 @@
     "format": "oxfmt src/"
   },
   "dependencies": {
+    "@turf/bbox": "^7.3.4",
     "maplibre-gl": "^5.20.0",
     "pinia": "^3.0.4",
     "vue": "^3.5.29",
