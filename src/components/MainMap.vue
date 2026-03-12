@@ -2,7 +2,7 @@
 import bbox from '@turf/bbox';
 import maplibregl, { type GeoJSONSourceSpecification } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { onMounted, ref, shallowRef, watch } from 'vue';
+import { computed, onMounted, ref, shallowRef, watch } from 'vue';
 
 const isSatelliteBasemap = ref(true);
 
@@ -68,6 +68,9 @@ function onFileChange(event: Event) {
 }
 
 onMounted(() => {
+  const pitch = ref(0);
+  const elevation = computed(() => pitch.value === 0 ? 0 : 1);
+
   const map = new maplibregl.Map({
     container: 'map',
     center: [2.04, 42.51],
@@ -75,6 +78,12 @@ onMounted(() => {
     pitch: 0,
     maplibreLogo: true,
     style: `https://api.maptiler.com/maps/019cdf8f-4103-7c1d-b40f-ee87f04dc387/style.json?key=${api_key}`,
+  });
+
+  map.on('pitch', () => { pitch.value = map.getPitch(); });
+
+  watch(elevation, (newElevation) => {
+    map.setTerrain(map.getTerrain() ? { ...map.getTerrain()!, exaggeration: newElevation } : null);
   });
 
   watch(geojsonData, () => {
