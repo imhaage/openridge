@@ -2,9 +2,11 @@
 import bbox from '@turf/bbox';
 import maplibregl, { type GeoJSONSourceSpecification } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { computed, onMounted, ref, shallowRef, watch } from 'vue';
+import { onMounted, ref, shallowRef, watch } from 'vue';
 
 const isSatelliteBasemap = ref(true);
+const pitch = ref(0);
+let map: maplibregl.Map;
 
 const geojsonData = shallowRef<GeoJSONSourceSpecification>({
   type: 'geojson',
@@ -42,6 +44,7 @@ function renderTrack(map: maplibregl.Map, data: GeoJSONSourceSpecification) {
       },
       '',
     );
+
     map.addLayer(
       {
         id: 'track-points',
@@ -70,8 +73,6 @@ function onFileChange(event: Event) {
         type: 'geojson',
         data: JSON.parse(reader.result as string),
       };
-
-      console.log('Loaded GeoJSON:', geojsonData.value);
     } catch {
       alert('Invalid JSON');
     }
@@ -79,11 +80,12 @@ function onFileChange(event: Event) {
   reader.readAsText(file);
 }
 
-onMounted(() => {
-  const pitch = ref(0);
-  const elevation = computed(() => (pitch.value === 0 ? 0 : 1));
+function togglePitch() {
+  map.easeTo({ pitch: pitch.value === 0 ? 60 : 0 });
+}
 
-  const map = new maplibregl.Map({
+onMounted(() => {
+  map = new maplibregl.Map({
     container: 'map',
     center: [2.04, 42.51],
     zoom: 15,
@@ -96,16 +98,19 @@ onMounted(() => {
     pitch.value = map.getPitch();
   });
 
-  watch(elevation, (newElevation) => {
-    map.setTerrain(map.getTerrain() ? { ...map.getTerrain()!, exaggeration: newElevation } : null);
-  });
-
   watch(geojsonData, () => {
     renderTrack(map, geojsonData.value);
 
-    const [minLng, minLat, maxLng, maxLat] = bbox(geojsonData.value.data as GeoJSON.GeoJSON);
+    const [west, south, east, north] = bbox(geojsonData.value.data as GeoJSON.GeoJSON);
 
-    map.fitBounds([minLng, minLat, maxLng, maxLat], { padding: 50, pitch: 0 });
+    console.log('Bounding box:', { west, south, east, north });
+
+    map.fitBounds([west, south, east, north], {
+      padding: 50,
+      pitch: 0,
+      bearing: 0,
+      duration: 4000,
+    });
   });
 
   watch(isSatelliteBasemap, () => {
@@ -127,6 +132,8 @@ onMounted(() => {
     <button @click="isSatelliteBasemap = !isSatelliteBasemap">Toggle basemap</button>
 
     <button @click="fileInput?.click()">Upload GeoJSON</button>
+
+    <button @click="togglePitch">Toggle pitch</button>
     <input
       ref="fileInput"
       type="file"
