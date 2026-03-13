@@ -36,8 +36,20 @@ function renderTrack(map: maplibregl.Map, data: GeoJSONSourceSpecification) {
           'line-cap': 'round',
         },
         paint: {
-          'line-color': '#f88',
+          'line-color': '#6baed6',
           'line-width': 4,
+        },
+      },
+      '',
+    );
+    map.addLayer(
+      {
+        id: 'track-points',
+        type: 'circle',
+        source: 'track',
+        paint: {
+          'circle-color': '#3182bd',
+          'circle-radius': 4,
         },
       },
       '',
@@ -69,7 +81,7 @@ function onFileChange(event: Event) {
 
 onMounted(() => {
   const pitch = ref(0);
-  const elevation = computed(() => pitch.value === 0 ? 0 : 1);
+  const elevation = computed(() => (pitch.value === 0 ? 0 : 1));
 
   const map = new maplibregl.Map({
     container: 'map',
@@ -80,7 +92,9 @@ onMounted(() => {
     style: `https://api.maptiler.com/maps/019cdf8f-4103-7c1d-b40f-ee87f04dc387/style.json?key=${api_key}`,
   });
 
-  map.on('pitch', () => { pitch.value = map.getPitch(); });
+  map.on('pitch', () => {
+    pitch.value = map.getPitch();
+  });
 
   watch(elevation, (newElevation) => {
     map.setTerrain(map.getTerrain() ? { ...map.getTerrain()!, exaggeration: newElevation } : null);
