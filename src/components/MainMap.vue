@@ -9,9 +9,12 @@ const { isSatelliteBasemap, togglePitch } = useMap('map', geojsonData);
 <template>
   <div class="container">
     <div class="header">
-      <button @click="isSatelliteBasemap = !isSatelliteBasemap">Toggle basemap</button>
       <button @click="fileInput?.click()">Upload GeoJSON</button>
-      <button @click="togglePitch">Toggle pitch</button>
+
+      <div>
+        <button @click="isSatelliteBasemap = !isSatelliteBasemap">Toggle basemap</button>
+        <button @click="togglePitch">Toggle pitch</button>
+      </div>
 
       <input
         ref="fileInput"
@@ -27,11 +30,6 @@ const { isSatelliteBasemap, togglePitch } = useMap('map', geojsonData);
 </template>
 
 <style>
-body {
-  margin: 0;
-  background-color: #345;
-}
-
 .container {
   display: grid;
   grid-template-rows: auto 1fr;
@@ -39,6 +37,8 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   padding: 4px;
   width: 100%;
   background-color: #fff;
