@@ -8,8 +8,8 @@ import { onMounted, ref, watch, type ShallowRef } from 'vue';
 const api_key = import.meta.env.VITE_MAPTILER_API_KEY;
 
 const STYLES = {
-  satellite: `https://api.maptiler.com/maps/019cdf8f-4103-7c1d-b40f-ee87f04dc387/style.json?key=${api_key}`,
-  topo: `https://api.maptiler.com/maps/019cddde-adc5-7944-8477-680ab3315819/style.json?key=${api_key}`,
+  satellite: `https://api.maptiler.com/maps/019cebbf-159e-74bd-9c38-be3a13abd444/style.json?key=${api_key}`,
+  topo: `https://api.maptiler.com/maps/019cebbf-cd46-7d9d-8b0a-13739b70f21a/style.json?key=${api_key}`,
 };
 
 function renderTrack(map: maplibregl.Map, data: GeoJSONSourceSpecification) {
