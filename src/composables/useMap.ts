@@ -73,21 +73,21 @@ export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourc
       const [west, south, east, north] = square(bbox(geojsonData.value.data as GeoJSON.GeoJSON));
 
       /**
-       * Add some padding (in degrees) around the track to mitigate the impact of a weird issue with fitBounds:
-       * when the bbox is very small AND the zoom is modified by the user, fitBounds seems to zoom in too much.
-       * @TODO : try to fix the problem in maplibre-gl-js instead of adding this approximate hack
+       * cameraForBounds + flyTo are used instead of fitBounds because of a weird bug:
+       * once zoom has been modified by the user, if the area is too small, fitBounds will zoom in way too much.
+       * @TODO : try to understand and fix the problem in maplibre-gl-js
        */
-      map.fitBounds(
+      const camera = map.cameraForBounds(
         [
-          [west - 0.05, south],
-          [east + 0.05, north],
+          [west, south],
+          [east, north],
         ],
-        {
-          pitch: 0,
-          bearing: 0,
-          duration: 4000,
-        },
+        { padding: 50 },
       );
+
+      if (camera) {
+        map.flyTo({ ...camera, pitch: 0, bearing: 0, duration: 3000 });
+      }
     });
 
     watch(isSatelliteBasemap, () => {
