@@ -7,6 +7,10 @@ import MainMap from './components/MainMap.vue';
 </template>
 
 <style global>
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
 }

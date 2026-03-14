@@ -9,7 +9,10 @@ const { isSatelliteBasemap, togglePitch } = useMap('map', geojsonData);
 <template>
   <div class="container">
     <div class="header">
-      <button @click="fileInput?.click()">Upload GeoJSON</button>
+      <div class="header-left">
+        <div class="logo">OpenRidge</div>
+        <button @click="fileInput?.click()">Upload GeoJSON</button>
+      </div>
 
       <div>
         <button @click="isSatelliteBasemap = !isSatelliteBasemap">Toggle basemap</button>
@@ -39,11 +42,23 @@ const { isSatelliteBasemap, togglePitch } = useMap('map', geojsonData);
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 4px;
   width: 100%;
   background-color: #fff;
   border-bottom: 1px solid #789;
   z-index: 1;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  font-weight: 600;
+  color: #123;
 }
 
 .hidden {
