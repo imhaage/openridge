@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useGeoJsonFile } from '../composables/useGeoJsonFile';
 import { useMap } from '../composables/useMap';
+import OpenRidgeLogo from './OpenRidgeLogo.vue';
 
 const { geojsonData, fileInput, onFileChange } = useGeoJsonFile();
 const { isSatelliteBasemap, togglePitch } = useMap('map', geojsonData);
@@ -10,7 +11,7 @@ const { isSatelliteBasemap, togglePitch } = useMap('map', geojsonData);
   <div class="container">
     <div class="header">
       <div class="header-left">
-        <div class="logo">OpenRidge</div>
+        <OpenRidgeLogo />
         <button @click="fileInput?.click()">Upload GeoJSON</button>
       </div>
 
@@ -54,11 +55,6 @@ const { isSatelliteBasemap, togglePitch } = useMap('map', geojsonData);
   display: flex;
   align-items: center;
   gap: 16px;
-}
-
-.logo {
-  font-weight: 600;
-  color: #123;
 }
 
 .hidden {
