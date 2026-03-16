@@ -14,12 +14,15 @@ https://openridge.netlify.app
 ## Features
 
 Short term (currently being built):
-- Load and visualize GeoJSON/GPX data
-- Weather forecasts along the route using open-meteo.com API
-- Satellite/Topo basemaps with 3D rendering of the elevation (MapTiler)
+- [x] Satellite/Topo basemaps with 3D rendering of the elevation (MapTiler)
+- [x] Load and visualize GeoJSON data (points and lines)
+- [ ] Load and visualize GPX data
+- [ ] Show information when hovering over a point along the route, depending on the available data
+- [ ] Allow the route style to be customised (colors, line-width, etc.)
+- [ ] Weather forecasts along the route using open-meteo.com API
 
 Mid term:
-- Network coverage (France only for now, ARCEP data)
+- Mobile network coverage (France only for now, ARCEP data)
 - Show useful POIs from OpenStreetMap: shelters, water sources, parking, etc.
 
 Long term:
