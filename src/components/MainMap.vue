@@ -12,7 +12,7 @@ const { togglePitch } = useMap('map', geojsonData);
     <div class="header">
       <div class="header-left">
         <OpenRidgeLogo />
-        <button @click="fileInput?.click()">
+        <button class="button" @click="fileInput?.click()">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -24,7 +24,7 @@ const { togglePitch } = useMap('map', geojsonData);
       </div>
 
       <div>
-        <button @click="togglePitch">
+        <button class="button" @click="togglePitch">
           <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
             <path
               fill="currentColor"

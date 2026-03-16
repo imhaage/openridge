@@ -39,14 +39,9 @@ export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourc
   let map: maplibregl.Map;
 
   const currentPitch = ref(0);
-  const currentBearing = ref(0);
 
   function togglePitch() {
-    map?.easeTo(
-      currentPitch.value !== 0 || currentBearing.value !== 0
-        ? { pitch: 0, bearing: 0 }
-        : { pitch: 60, bearing: 0 },
-    );
+    map?.easeTo({ pitch: currentPitch.value !== 0 ? 0 : 60 });
   }
 
   onMounted(() => {
@@ -71,7 +66,7 @@ export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourc
         },
         terrain: {
           source: 'terrainSource',
-          exaggeration: 1,
+          exaggeration: 1.2,
         },
         layers: [
           {
@@ -83,12 +78,10 @@ export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourc
       } as maplibregl.StyleSpecification,
     });
 
+    map.addControl(new maplibregl.NavigationControl());
+
     map.on('pitch', () => {
       currentPitch.value = map.getPitch();
-    });
-
-    map.on('bearing', () => {
-      currentBearing.value = map.getBearing();
     });
 
     watch(geojsonData, () => {
@@ -110,5 +103,5 @@ export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourc
     });
   });
 
-  return { pitch: currentPitch, togglePitch };
+  return { togglePitch };
 }

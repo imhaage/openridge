@@ -32,7 +32,7 @@ body {
   background-color: var(--color-bg);
 }
 
-button {
+.button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
