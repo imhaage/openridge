@@ -44,10 +44,10 @@ const { isSatelliteBasemap, togglePitch } = useMap('map', geojsonData);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4px;
+  padding: 8px 4px;
   width: 100%;
-  background-color: #fff;
-  border-bottom: 1px solid #789;
+  color: #fff;
+  background-color: #2b2b2c;
   z-index: 1;
 }
 

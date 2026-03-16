@@ -15,6 +15,5 @@
   align-items: center;
   gap: 4px;
   font-weight: 600;
-  color: #123;
 }
 </style>
