@@ -1,16 +1,8 @@
 import bbox from '@turf/bbox';
 import { square } from '@turf/square';
-
 import maplibregl, { type GeoJSONSourceSpecification } from 'maplibre-gl';
-import 'maplibre-gl/dist/maplibre-gl.css';
 import { onMounted, ref, watch, type ShallowRef } from 'vue';
-
-const api_key = import.meta.env.VITE_MAPTILER_API_KEY;
-
-const STYLES = {
-  satellite: `https://api.maptiler.com/maps/019cebbf-159e-74bd-9c38-be3a13abd444/style.json?key=${api_key}`,
-  topo: `https://api.maptiler.com/maps/019cebbf-cd46-7d9d-8b0a-13739b70f21a/style.json?key=${api_key}`,
-};
+import 'maplibre-gl/dist/maplibre-gl.css';
 
 function renderTrack(map: maplibregl.Map, data: GeoJSONSourceSpecification) {
   const trackSource = map.getSource('track');
@@ -46,11 +38,15 @@ function renderTrack(map: maplibregl.Map, data: GeoJSONSourceSpecification) {
 export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourceSpecification>) {
   let map: maplibregl.Map;
 
-  const pitch = ref(0);
-  const isSatelliteBasemap = ref(true);
+  const currentPitch = ref(0);
+  const currentBearing = ref(0);
 
   function togglePitch() {
-    map?.easeTo({ pitch: pitch.value === 0 ? 60 : 0 });
+    map?.easeTo(
+      currentPitch.value !== 0 || currentBearing.value !== 0
+        ? { pitch: 0, bearing: 0 }
+        : { pitch: 60, bearing: 0 },
+    );
   }
 
   onMounted(() => {
@@ -60,11 +56,39 @@ export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourc
       zoom: 15,
       pitch: 0,
       maplibreLogo: true,
-      style: STYLES.satellite,
+      style: {
+        version: 8,
+        sources: {
+          openTopoMap: {
+            type: 'raster',
+            tiles: ['https://a.tile.opentopomap.org/{z}/{x}/{y}.png'],
+            attribution: "&copy; <a href='https://opentopomap.org'>OpenTopoMap</a>",
+          },
+          terrainSource: {
+            type: 'raster-dem',
+            url: 'https://tiles.mapterhorn.com/tilejson.json',
+          },
+        },
+        terrain: {
+          source: 'terrainSource',
+          exaggeration: 1,
+        },
+        layers: [
+          {
+            id: 'opentopomap',
+            type: 'raster',
+            source: 'openTopoMap',
+          },
+        ],
+      } as maplibregl.StyleSpecification,
     });
 
     map.on('pitch', () => {
-      pitch.value = map.getPitch();
+      currentPitch.value = map.getPitch();
+    });
+
+    map.on('bearing', () => {
+      currentBearing.value = map.getBearing();
     });
 
     watch(geojsonData, () => {
@@ -84,12 +108,7 @@ export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourc
         { padding: 50, pitch: 0, bearing: 0, duration: 2000 },
       );
     });
-
-    watch(isSatelliteBasemap, () => {
-      map.once('style.load', () => renderTrack(map, geojsonData.value));
-      map.setStyle(isSatelliteBasemap.value ? STYLES.satellite : STYLES.topo);
-    });
   });
 
-  return { pitch, isSatelliteBasemap, togglePitch };
+  return { pitch: currentPitch, togglePitch };
 }

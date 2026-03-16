@@ -33,7 +33,10 @@ body {
 }
 
 button {
-  width: 16ch;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
   font-family: 'Barlow', sans-serif;
   font-weight: 400;
   font-style: normal;
