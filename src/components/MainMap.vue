@@ -4,7 +4,7 @@ import { useMap } from '../composables/useMap';
 import OpenRidgeLogo from './OpenRidgeLogo.vue';
 
 const { geojsonData, fileInput, onFileChange } = useGeoJsonFile();
-const { togglePitch } = useMap('map', geojsonData);
+const { toggle3DView } = useMap('map', geojsonData);
 </script>
 
 <template>
@@ -24,7 +24,7 @@ const { togglePitch } = useMap('map', geojsonData);
       </div>
 
       <div>
-        <button class="button" @click="togglePitch">
+        <button class="button" @click="toggle3DView">
           <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24">
             <path
               fill="currentColor"

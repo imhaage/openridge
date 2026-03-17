@@ -2,7 +2,10 @@ import bbox from '@turf/bbox';
 import { square } from '@turf/square';
 import maplibregl, { type GeoJSONSourceSpecification } from 'maplibre-gl';
 import { onMounted, ref, watch, type ShallowRef } from 'vue';
+import { mapStyles } from 'carte-facile';
 import 'maplibre-gl/dist/maplibre-gl.css';
+import 'carte-facile/carte-facile.css';
+import { IgnAerial } from './styles/IgnAerial';
 
 function renderTrack(map: maplibregl.Map, data: GeoJSONSourceSpecification) {
   const trackSource = map.getSource('track');
@@ -40,43 +43,24 @@ export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourc
 
   const currentPitch = ref(0);
 
-  function togglePitch() {
-    map?.easeTo({ pitch: currentPitch.value !== 0 ? 0 : 60 });
+  function toggle3DView() {
+    if (map) {
+      map.easeTo(currentPitch.value !== 0 ? { pitch: 0, bearing: 0 } : { pitch: 60 });
+    }
   }
 
   onMounted(() => {
     map = new maplibregl.Map({
       container: containerId,
-      center: [2.04, 42.51],
-      zoom: 15,
+      center: [2.5, 46.5],
+      zoom: 5,
+      maxZoom: 18,
       pitch: 0,
       maplibreLogo: true,
-      style: {
-        version: 8,
-        sources: {
-          openTopoMap: {
-            type: 'raster',
-            tiles: ['https://a.tile.opentopomap.org/{z}/{x}/{y}.png'],
-            attribution: "&copy; <a href='https://opentopomap.org'>OpenTopoMap</a>",
-          },
-          terrainSource: {
-            type: 'raster-dem',
-            url: 'https://tiles.mapterhorn.com/tilejson.json',
-          },
-        },
-        terrain: {
-          source: 'terrainSource',
-          exaggeration: 1.2,
-        },
-        layers: [
-          {
-            id: 'opentopomap',
-            type: 'raster',
-            source: 'openTopoMap',
-          },
-        ],
-      } as maplibregl.StyleSpecification,
+      style: IgnAerial,
     });
+
+    console.log('Map initialized', mapStyles.aerial);
 
     map.addControl(new maplibregl.NavigationControl());
 
@@ -103,5 +87,5 @@ export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourc
     });
   });
 
-  return { togglePitch };
+  return { toggle3DView };
 }

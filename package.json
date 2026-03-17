@@ -18,6 +18,7 @@
   "dependencies": {
     "@turf/bbox": "^7.3.4",
     "@turf/square": "^7.3.4",
+    "carte-facile": "^0.9.0",
     "maplibre-gl": "^5.20.0",
     "pinia": "^3.0.4",
     "vue": "^3.5.29",
