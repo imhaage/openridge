@@ -5,11 +5,12 @@ import maplibregl, {
   type SymbolLayerSpecification,
 } from 'maplibre-gl';
 import { onMounted, watch, type ShallowRef } from 'vue';
-import { mapStyles, addOverlay, Overlay } from 'carte-facile';
-import 'maplibre-gl/dist/maplibre-gl.css';
-import 'carte-facile/carte-facile.css';
+import { addOverlay, Overlay } from 'carte-facile';
+import { useMapInstance } from './useMapInstance';
 import { IgnAerial } from './styles/IgnAerial';
 import { useMapState } from './useMapState';
+import 'maplibre-gl/dist/maplibre-gl.css';
+import 'carte-facile/carte-facile.css';
 
 function renderTrack(map: maplibregl.Map, data: GeoJSONSourceSpecification) {
   const trackSource = map.getSource('track');
@@ -45,18 +46,18 @@ function renderTrack(map: maplibregl.Map, data: GeoJSONSourceSpecification) {
 const { load: loadMapState, save: saveMapState } = useMapState();
 
 export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourceSpecification>) {
-  let map: maplibregl.Map;
+  const { map } = useMapInstance();
 
   function toggle3DView() {
-    if (map) {
-      map.easeTo(map.getPitch() !== 0 ? { pitch: 0, bearing: 0 } : { pitch: 60 });
+    if (map.value) {
+      map.value.easeTo(map.value.getPitch() !== 0 ? { pitch: 0, bearing: 0 } : { pitch: 60 });
     }
   }
 
   onMounted(() => {
     const savedState = loadMapState();
 
-    map = new maplibregl.Map({
+    const mapInstance = new maplibregl.Map({
       container: containerId,
       center: savedState?.center ?? [2.5, 46.5],
       zoom: savedState?.zoom ?? 5,
@@ -66,11 +67,13 @@ export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourc
       style: IgnAerial,
     });
 
-    map.on('load', () => {
-      addOverlay(map, [Overlay.levelCurves]);
+    map.value = mapInstance;
+
+    mapInstance.on('load', () => {
+      addOverlay(mapInstance, [Overlay.levelCurves]);
 
       // Insert the layer beneath any symbol layer.
-      const layers = map.getStyle().layers;
+      const layers = mapInstance.getStyle().layers;
 
       let labelLayerId;
       for (let i = 0; i < layers.length; i++) {
@@ -81,13 +84,13 @@ export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourc
         }
       }
 
-      map.addSource('openfreemap', {
+      mapInstance.addSource('openfreemap', {
         url: `https://tiles.openfreemap.org/planet`,
         type: 'vector',
         attribution: 'OpenFreemap',
       });
 
-      map.addLayer(
+      mapInstance.addLayer(
         {
           id: '3d-buildings',
           source: 'openfreemap',
@@ -128,17 +131,20 @@ export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourc
       );
     });
 
-    console.log('Map initialized', mapStyles.aerial);
+    mapInstance.addControl(new maplibregl.NavigationControl());
 
-    map.addControl(new maplibregl.NavigationControl());
-
-    map.on('moveend', () => {
-      const { lng, lat } = map.getCenter();
-      saveMapState({ center: [lng, lat], zoom: map.getZoom(), pitch: map.getPitch(), bearing: map.getBearing() });
+    mapInstance.on('moveend', () => {
+      const { lng, lat } = mapInstance.getCenter();
+      saveMapState({
+        center: [lng, lat],
+        zoom: mapInstance.getZoom(),
+        pitch: mapInstance.getPitch(),
+        bearing: mapInstance.getBearing(),
+      });
     });
 
     watch(geojsonData, () => {
-      renderTrack(map, geojsonData.value);
+      renderTrack(mapInstance, geojsonData.value);
 
       const [west, south, east, north] = square(bbox(geojsonData.value.data as GeoJSON.GeoJSON));
 
@@ -146,7 +152,7 @@ export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourc
       const paddingLon = east - west < 0.01 ? 0.01 : 0;
       const paddingLat = north - south < 0.01 ? 0.01 : 0;
 
-      map.fitBounds(
+      mapInstance.fitBounds(
         [
           [west - paddingLon, south - paddingLat],
           [east + paddingLon, north + paddingLat],
