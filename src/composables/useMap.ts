@@ -4,7 +4,7 @@ import maplibregl, {
   type GeoJSONSourceSpecification,
   type SymbolLayerSpecification,
 } from 'maplibre-gl';
-import { onMounted, ref, watch, type ShallowRef } from 'vue';
+import { onMounted, watch, type ShallowRef } from 'vue';
 import { mapStyles, addOverlay, Overlay } from 'carte-facile';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import 'carte-facile/carte-facile.css';
@@ -47,11 +47,9 @@ const { load: loadMapState, save: saveMapState } = useMapState();
 export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourceSpecification>) {
   let map: maplibregl.Map;
 
-  const currentPitch = ref(0);
-
   function toggle3DView() {
     if (map) {
-      map.easeTo(currentPitch.value !== 0 ? { pitch: 0, bearing: 0 } : { pitch: 60 });
+      map.easeTo(map.getPitch() !== 0 ? { pitch: 0, bearing: 0 } : { pitch: 60 });
     }
   }
 
@@ -137,10 +135,6 @@ export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourc
     map.on('moveend', () => {
       const { lng, lat } = map.getCenter();
       saveMapState({ center: [lng, lat], zoom: map.getZoom(), pitch: map.getPitch(), bearing: map.getBearing() });
-    });
-
-    map.on('pitch', () => {
-      currentPitch.value = map.getPitch();
     });
 
     watch(geojsonData, () => {
