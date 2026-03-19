@@ -1,22 +1,24 @@
 import bbox from '@turf/bbox';
 import { square } from '@turf/square';
-import maplibregl, {
+import {
+  Map as MaptilerMap,
+  MapStyle,
+  config,
   type GeoJSONSourceSpecification,
-  type SymbolLayerSpecification,
-} from 'maplibre-gl';
+  GeoJSONSource,
+} from '@maptiler/sdk';
+import '@maptiler/sdk/dist/maptiler-sdk.css';
 import { onMounted, watch, type ShallowRef } from 'vue';
-import { addOverlay, Overlay } from 'carte-facile';
 import { useMapInstance } from './useMapInstance';
-import { IgnAerial } from './styles/IgnAerial';
 import { useMapState } from './useMapState';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import 'carte-facile/carte-facile.css';
 
-function renderTrack(map: maplibregl.Map, data: GeoJSONSourceSpecification) {
+function renderTrack(map: MaptilerMap, data: GeoJSONSourceSpecification) {
   const trackSource = map.getSource('track');
 
   if (trackSource) {
-    (trackSource as maplibregl.GeoJSONSource).setData(data.data as GeoJSON.GeoJSON);
+    (trackSource as GeoJSONSource).setData(data.data as GeoJSON.GeoJSON);
   } else {
     map.addSource('track', data);
 
@@ -57,81 +59,20 @@ export function useMap(containerId: string, geojsonData: ShallowRef<GeoJSONSourc
   onMounted(() => {
     const savedState = loadMapState();
 
-    const mapInstance = new maplibregl.Map({
+    config.apiKey = import.meta.env.VITE_MAPTILER_API_KEY;
+    const mapInstance = new MaptilerMap({
       container: containerId,
       center: savedState?.center ?? [2.5, 46.5],
       zoom: savedState?.zoom ?? 5,
       pitch: savedState?.pitch ?? 0,
       bearing: savedState?.bearing ?? 0,
-      maplibreLogo: true,
-      style: IgnAerial,
+      maptilerLogo: true,
+      style: MapStyle.HYBRID_V4,
+      terrain: true,
+      navigationControl: false,
     });
 
     map.value = mapInstance;
-
-    mapInstance.on('load', () => {
-      addOverlay(mapInstance, [Overlay.levelCurves]);
-
-      // Insert the layer beneath any symbol layer.
-      const layers = mapInstance.getStyle().layers;
-
-      let labelLayerId;
-      for (let i = 0; i < layers.length; i++) {
-        const layer = layers[i] as SymbolLayerSpecification;
-        if (layer.type === 'symbol' && layer.layout?.['text-field']) {
-          labelLayerId = layer.id;
-          break;
-        }
-      }
-
-      mapInstance.addSource('openfreemap', {
-        url: `https://tiles.openfreemap.org/planet`,
-        type: 'vector',
-        attribution: 'OpenFreemap',
-      });
-
-      mapInstance.addLayer(
-        {
-          id: '3d-buildings',
-          source: 'openfreemap',
-          'source-layer': 'building',
-          type: 'fill-extrusion',
-          minzoom: 15,
-          filter: ['!=', ['get', 'hide_3d'], true],
-          paint: {
-            'fill-extrusion-color': [
-              'interpolate',
-              ['linear'],
-              ['get', 'render_height'],
-              0,
-              '#f5dda6',
-              200,
-              '#fab984',
-              400,
-              '#fa7d7d',
-            ],
-            'fill-extrusion-height': [
-              'interpolate',
-              ['linear'],
-              ['zoom'],
-              15,
-              0,
-              16,
-              ['get', 'render_height'],
-            ],
-            'fill-extrusion-base': [
-              'case',
-              ['>=', ['get', 'zoom'], 16],
-              ['get', 'render_min_height'],
-              0,
-            ],
-          },
-        },
-        labelLayerId,
-      );
-    });
-
-    mapInstance.addControl(new maplibregl.NavigationControl());
 
     mapInstance.on('moveend', () => {
       const { lng, lat } = mapInstance.getCenter();
