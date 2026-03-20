@@ -1,0 +1,2202 @@
+[
+  {
+    "code": "GR1",
+    "name": "GR1 Tour de Paris (Ile de France) (2020)",
+    "bbox": [
+      1.716088,
+      48.292216,
+      2.934035,
+      49.162763
+    ],
+    "file": "gr/GR1.geojson"
+  },
+  {
+    "code": "GR10",
+    "name": "GR10 De Ras dels Cortalets à Banyuls-sur-Mer (Pyrénées-Orientales) (2020)",
+    "bbox": [
+      -1.77406,
+      42.421508,
+      3.129082,
+      43.37314
+    ],
+    "file": "gr/GR10.geojson"
+  },
+  {
+    "code": "GR101",
+    "name": "GR101 De Maubourguet au Col de Saucède (Hautes-Pyrénées) (2019)",
+    "bbox": [
+      -0.270871,
+      42.954739,
+      0.035677,
+      43.46117
+    ],
+    "file": "gr/GR101.geojson"
+  },
+  {
+    "code": "GR105",
+    "name": "GR105 De Lortet au Port d'Ourdissétou (Hautes-Pyrénées) (2020)",
+    "bbox": [
+      0.285296,
+      42.679472,
+      0.388966,
+      43.042428
+    ],
+    "file": "gr/GR105.geojson"
+  },
+  {
+    "code": "GR107",
+    "name": "GR107 De Foix (Ariège) à Portella Blanca (Andorre-Espagne) (2019)",
+    "bbox": [
+      1.608306,
+      42.503174,
+      1.898355,
+      42.970258
+    ],
+    "file": "gr/GR107.geojson"
+  },
+  {
+    "code": "GR11",
+    "name": "GR11 De Signy-Signets à Donnemarie-Dontilly (Seine-et-Marne) (2019)",
+    "bbox": [
+      1.667658,
+      48.321806,
+      3.314434,
+      49.273315
+    ],
+    "file": "gr/GR11.geojson"
+  },
+  {
+    "code": "GR111",
+    "name": "GR111 De Milly-la-Forêt à St Michel-sur-Orge (Essonne) (2020)",
+    "bbox": [
+      1.978108,
+      48.286396,
+      2.484733,
+      48.642465
+    ],
+    "file": "gr/GR111.geojson"
+  },
+  {
+    "code": "GR12",
+    "name": "GR12 De Amifontaine à Vic-sur-Aisne (Aisne) (2019)",
+    "bbox": [
+      2.479864,
+      49.156706,
+      4.589761,
+      49.969483
+    ],
+    "file": "gr/GR12.geojson"
+  },
+  {
+    "code": "GR120",
+    "name": "GR120 De Bray-Dunes (Nord) à Mers-les-Bains (Somme) (2020)",
+    "bbox": [
+      1.375398,
+      50.062159,
+      2.518722,
+      51.080792
+    ],
+    "file": "gr/GR120.geojson"
+  },
+  {
+    "code": "GR121",
+    "name": "GR121 De Bon-Secours (Belgique) à Equihen-Plage (Pas-de-Calais) (2020)",
+    "bbox": [
+      1.569712,
+      50.227495,
+      3.649864,
+      50.676522
+    ],
+    "file": "gr/GR121.geojson"
+  },
+  {
+    "code": "GR122",
+    "name": "GR122 De Hannapes (Aisne) à Chappes (Ardennes) (2019)",
+    "bbox": [
+      3.594782,
+      49.596448,
+      4.277277,
+      50.452915
+    ],
+    "file": "gr/GR122.geojson"
+  },
+  {
+    "code": "GR123",
+    "name": "GR123 De Contes (Pas-de-Calais) à Carlepont (Oise) (2020)",
+    "bbox": [
+      1.829757,
+      49.503749,
+      3.031321,
+      50.424616
+    ],
+    "file": "gr/GR123.geojson"
+  },
+  {
+    "code": "GR124",
+    "name": "GR124 De Berny-sur-Noye (Somme) à Rebreuviette (Pas-de-Calais) (2019)",
+    "bbox": [
+      2.20215,
+      49.270115,
+      2.509682,
+      50.260848
+    ],
+    "file": "gr/GR124.geojson"
+  },
+  {
+    "code": "GR125",
+    "name": "GR125 De la Cressonnière (Val-d'Oise) à St Valery-sur-Somme (Somme) (2020)",
+    "bbox": [
+      1.634327,
+      49.163086,
+      2.19482,
+      50.180868
+    ],
+    "file": "gr/GR125.geojson"
+  },
+  {
+    "code": "GR127",
+    "name": "GR127 De St Aubin (Dennebroeucq) à Duisans (Pas-de-Calais) (2020)",
+    "bbox": [
+      2.126764,
+      50.309658,
+      2.718243,
+      50.577662
+    ],
+    "file": "gr/GR127.geojson"
+  },
+  {
+    "code": "GR128",
+    "name": "GR128 De Wissant (Pas-de-Calais) à Bailleul (Nord) (2019)",
+    "bbox": [
+      1.660707,
+      50.74263,
+      2.78384,
+      50.930478
+    ],
+    "file": "gr/GR128.geojson"
+  },
+  {
+    "code": "GR13",
+    "name": "GR13 De Fontainebleau (Seine-et-Marne) à Signal-de-Mont (Saône-et-Loire) (2020)",
+    "bbox": [
+      2.58705,
+      46.647137,
+      4.119701,
+      48.405468
+    ],
+    "file": "gr/GR13.geojson"
+  },
+  {
+    "code": "GR131",
+    "name": "GR131 Du Mont-Beuvray (Morvan) à Issy-l'Evêque (Saône-et-Loire) (2020)",
+    "bbox": [
+      3.974246,
+      46.665987,
+      4.332959,
+      46.948441
+    ],
+    "file": "gr/GR131.geojson"
+  },
+  {
+    "code": "GR132",
+    "name": "GR132 De La Sausselière (Loiret) à Chaumot (Yonne) (2020)",
+    "bbox": [
+      2.834322,
+      48.037922,
+      3.224668,
+      48.078592
+    ],
+    "file": "gr/GR132.geojson"
+  },
+  {
+    "code": "GR137",
+    "name": "GR137 De Autun (Saône-et-Loire) à Nolay (Côte-d'Or) (2019)",
+    "bbox": [
+      4.306469,
+      46.833361,
+      4.634536,
+      46.951681
+    ],
+    "file": "gr/GR137.geojson"
+  },
+  {
+    "code": "GR14",
+    "name": "GR14 De Coulommiers (Seine-et-Marne) à Reuil (Marne) (2019)",
+    "bbox": [
+      2.403935,
+      48.714977,
+      5.159586,
+      49.797825
+    ],
+    "file": "gr/GR14.geojson"
+  },
+  {
+    "code": "GR142",
+    "name": "GR142 De Verzenay (Marne) à Laon (Aisne) (2019)",
+    "bbox": [
+      3.606694,
+      49.143222,
+      4.134669,
+      49.564568
+    ],
+    "file": "gr/GR142.geojson"
+  },
+  {
+    "code": "GR145",
+    "name": "GR145 Via Francigena. De Arras (Pas-de-Calais) à Saint Quentin (Aisne) (2020)",
+    "bbox": [
+      1.660663,
+      49.832682,
+      3.277462,
+      50.96544
+    ],
+    "file": "gr/GR145.geojson"
+  },
+  {
+    "code": "GR2",
+    "name": "GR2 De Gommecourt (Yvelines) à St Pierre-de-Manneville (Seine-Maritime) (2020)",
+    "bbox": [
+      0.163025,
+      47.398457,
+      4.955338,
+      49.527953
+    ],
+    "file": "gr/GR2.geojson"
+  },
+  {
+    "code": "GR20",
+    "name": "GR20 De Calenzana à Vizzavona en Corse (2020)",
+    "bbox": [
+      8.849705,
+      41.73475,
+      9.33398,
+      42.506341
+    ],
+    "file": "gr/GR20.geojson"
+  },
+  {
+    "code": "GR2013",
+    "name": "GR2013 Tour de l'étang de Berre (Bouches-du-Rhône)",
+    "bbox": [
+      4.97259,
+      43.246319,
+      5.71169,
+      43.641441
+    ],
+    "file": "gr/GR2013.geojson"
+  },
+  {
+    "code": "GR21",
+    "name": "GR21 De Veulettes-sur-Mer à Le Tréport (Seine-Maritime) (2019)",
+    "bbox": [
+      0.092665,
+      49.499956,
+      1.372731,
+      50.060759
+    ],
+    "file": "gr/GR21.geojson"
+  },
+  {
+    "code": "GR210",
+    "name": "GR210 De Dieppe à Rouen (Seine-Maritime) (2019)",
+    "bbox": [
+      1.047726,
+      49.442694,
+      1.153223,
+      49.92284
+    ],
+    "file": "gr/GR210.geojson"
+  },
+  {
+    "code": "GR211",
+    "name": "GR211 De Veulettes-sur-Mer à Caudebec-en-Caux (Seine-Maritime) (2020)",
+    "bbox": [
+      0.600998,
+      49.525195,
+      0.72512,
+      49.853135
+    ],
+    "file": "gr/GR211.geojson"
+  },
+  {
+    "code": "GR212",
+    "name": "GR212 De Ste Marguerite-sur-Mer à Le Paulu (Seine-Maritime) (2020)",
+    "bbox": [
+      0.917101,
+      49.515675,
+      1.027415,
+      49.907379
+    ],
+    "file": "gr/GR212.geojson"
+  },
+  {
+    "code": "GR213",
+    "name": "GR213 De Pont-sur-Yonne à St Georges-sur-Baulche (Yonne) (2020)",
+    "bbox": [
+      3.201437,
+      47.809168,
+      3.52607,
+      48.285918
+    ],
+    "file": "gr/GR213.geojson"
+  },
+  {
+    "code": "GR22",
+    "name": "GR22 De Bagnoles-de-l'Orne (Orne) à Mortain (Manche)",
+    "bbox": [
+      -1.511564,
+      48.382179,
+      2.287858,
+      48.860553
+    ],
+    "file": "gr/GR22.geojson"
+  },
+  {
+    "code": "GR221",
+    "name": "GR221 De Torigni-sur-Vire (Manche) à Pont-d'Ouilly (Calvados) (2019)",
+    "bbox": [
+      -1.444031,
+      48.85325,
+      -0.409862,
+      49.119912
+    ],
+    "file": "gr/GR221.geojson"
+  },
+  {
+    "code": "GR222",
+    "name": "GR222 De Pont-de-l'Arche à Verneuil-sur-Avre (Eure) (2019)",
+    "bbox": [
+      0.879056,
+      48.740279,
+      1.16954,
+      49.306335
+    ],
+    "file": "gr/GR222.geojson"
+  },
+  {
+    "code": "GR223",
+    "name": "GR223 Sentier du littoral (2020)",
+    "bbox": [
+      -1.948022,
+      48.616095,
+      0.36065,
+      49.726875
+    ],
+    "file": "gr/GR223.geojson"
+  },
+  {
+    "code": "GR224",
+    "name": "GR224 De Berville-sur-Mer à Verneuil-sur-Avre (Eure) (2020)",
+    "bbox": [
+      0.36687,
+      48.742245,
+      0.925158,
+      49.43507
+    ],
+    "file": "gr/GR224.geojson"
+  },
+  {
+    "code": "GR226",
+    "name": "GR226 De Vaux (Calvados) à Gué-Rochoux (Côtes-d'Armor) (2019)",
+    "bbox": [
+      -0.836313,
+      48.645683,
+      -0.518203,
+      48.858051
+    ],
+    "file": "gr/GR226.geojson"
+  },
+  {
+    "code": "GR235",
+    "name": "GR235 De Aillières-Beauvoir à La Vallée de la Flotte (Sarthe) (2020)",
+    "bbox": [
+      0.326634,
+      47.774262,
+      0.798987,
+      48.407803
+    ],
+    "file": "gr/GR235.geojson"
+  },
+  {
+    "code": "GR25",
+    "name": "GR25 De Sotteville à Pavilly (Seine-Maritime) (2020)",
+    "bbox": [
+      0.962894,
+      49.322758,
+      1.340713,
+      49.568707
+    ],
+    "file": "gr/GR25.geojson"
+  },
+  {
+    "code": "GR26",
+    "name": "GR26 De Villennes-sur-Seine (Yvelines) à Villers-sur-Mer (Calvados) (2020)",
+    "bbox": [
+      -0.008317,
+      48.920872,
+      1.99929,
+      49.321936
+    ],
+    "file": "gr/GR26.geojson"
+  },
+  {
+    "code": "GR3",
+    "name": "GR3 De La Chapelle St Mesmin (Loiret) à Lussault-sur-Loire (Indre-et-Loire) (2020)",
+    "bbox": [
+      -2.427598,
+      44.814289,
+      4.216024,
+      47.904201
+    ],
+    "file": "gr/GR3.geojson"
+  },
+  {
+    "code": "GR30",
+    "name": "GR30 Tour des volcans et lacs d'Auvergne (Puy-de-Dôme) (2019)",
+    "bbox": [
+      2.674366,
+      45.388014,
+      3.051876,
+      45.710464
+    ],
+    "file": "gr/GR30.geojson"
+  },
+  {
+    "code": "GR300",
+    "name": "GR300 De Châtel-de-Neuvre (Allier) à Clermont-Ferrand (Puy-de-Dôme) (2020)",
+    "bbox": [
+      2.91991,
+      45.045574,
+      3.883946,
+      46.830391
+    ],
+    "file": "gr/GR300.geojson"
+  },
+  {
+    "code": "GR303",
+    "name": "GR303 De Néris-les-Bains à Limoise (Allier) (2020)",
+    "bbox": [
+      2.598852,
+      46.28606,
+      3.687825,
+      46.713744
+    ],
+    "file": "gr/GR303.geojson"
+  },
+  {
+    "code": "GR31",
+    "name": "GR31 De Neuvy-sur-Barangeon (Cher) à Mont-près-Chambord (Loir-et-Cher) (2020)",
+    "bbox": [
+      1.479382,
+      47.215647,
+      2.922286,
+      47.650674
+    ],
+    "file": "gr/GR31.geojson"
+  },
+  {
+    "code": "GR32",
+    "name": "GR32 De St-Fargeau (Seine-et-Marne) à Chécy (Loiret) (2020)",
+    "bbox": [
+      2.027208,
+      47.890674,
+      2.562427,
+      48.53661
+    ],
+    "file": "gr/GR32.geojson"
+  },
+  {
+    "code": "GR34",
+    "name": "GR34 De Brouennou à Trégana (Finistère) (2019)",
+    "bbox": [
+      -4.79511,
+      47.469216,
+      -1.045077,
+      48.868326
+    ],
+    "file": "gr/GR34.geojson"
+  },
+  {
+    "code": "GR340",
+    "name": "GR340 Tour de Belle-Ile-en-Mer (Morbihan) (2020)",
+    "bbox": [
+      -3.260751,
+      47.279527,
+      -3.05699,
+      47.389645
+    ],
+    "file": "gr/GR340.geojson"
+  },
+  {
+    "code": "GR341",
+    "name": "GR341 De Lanester (Morbihan) à l'Ecluse de Bellevue (Côtes-d'Armor) (2020)",
+    "bbox": [
+      -3.305568,
+      47.765469,
+      -2.839998,
+      48.231457
+    ],
+    "file": "gr/GR341.geojson"
+  },
+  {
+    "code": "GR35",
+    "name": "GR35 De Verneuil-sur-Avre (Eure) à Villevêque (Maine-et-Loire) (2020)",
+    "bbox": [
+      -0.422431,
+      47.557504,
+      1.401817,
+      48.735178
+    ],
+    "file": "gr/GR35.geojson"
+  },
+  {
+    "code": "GR36",
+    "name": "GR36 De Mont-Saint-Jean à St Mars-d'Outillé (Sarthe) (2019)",
+    "bbox": [
+      -0.535044,
+      42.41878,
+      2.634696,
+      49.27829
+    ],
+    "file": "gr/GR36.geojson"
+  },
+  {
+    "code": "GR360",
+    "name": "GR360 Tour de la Saintonge (Charente-Maritime) (2020)",
+    "bbox": [
+      -0.964279,
+      45.220966,
+      -0.178807,
+      45.905801
+    ],
+    "file": "gr/GR360.geojson"
+  },
+  {
+    "code": "GR364",
+    "name": "GR364 De Plein-Bois (Vienne) à Jard-sur-Mer (Vendée) (2020)",
+    "bbox": [
+      -1.588447,
+      46.419708,
+      0.814696,
+      46.760065
+    ],
+    "file": "gr/GR364.geojson"
+  },
+  {
+    "code": "GR365",
+    "name": "GR365 De Sillé-le-Guillaume (Sarthe) à Durtal (Maine-et-Loire) (2019)",
+    "bbox": [
+      -0.367978,
+      47.669483,
+      -0.063922,
+      48.208916
+    ],
+    "file": "gr/GR365.geojson"
+  },
+  {
+    "code": "GR37",
+    "name": "GR37 De Vitré à Médréac (Ille-et-Vilaine) (2019)",
+    "bbox": [
+      -4.303155,
+      47.896358,
+      -1.215342,
+      48.38612
+    ],
+    "file": "gr/GR37.geojson"
+  },
+  {
+    "code": "GR38",
+    "name": "GR38 De Douarnenez (Finistère) à Gourin (Morbihan) (2019)",
+    "bbox": [
+      -4.306424,
+      47.648843,
+      -2.087483,
+      48.188499
+    ],
+    "file": "gr/GR38.geojson"
+  },
+  {
+    "code": "GR380",
+    "name": "GR380 Tour des Monts d'Arrée (Finistère) (2019)",
+    "bbox": [
+      -4.077334,
+      48.300186,
+      -3.574267,
+      48.577891
+    ],
+    "file": "gr/GR380.geojson"
+  },
+  {
+    "code": "GR39",
+    "name": "GR39 De Redon (Ille-et-Vilaine) à Hoscas (Loire-Atlantique) (2019)",
+    "bbox": [
+      -2.358185,
+      47.420088,
+      -1.441106,
+      48.635064
+    ],
+    "file": "gr/GR39.geojson"
+  },
+  {
+    "code": "GR4",
+    "name": "GR4 De Châtelus-le-Marcheix (Creuse) à Condat-en-Combraille (Puy-de-Dôme) (2020)",
+    "bbox": [
+      -1.21488,
+      43.667321,
+      6.957502,
+      46.041149
+    ],
+    "file": "gr/GR4.geojson"
+  },
+  {
+    "code": "GR40",
+    "name": "GR40 Tour du Velay (Haute-Loire) (2019)",
+    "bbox": [
+      3.630608,
+      44.858864,
+      4.186424,
+      45.202698
+    ],
+    "file": "gr/GR40.geojson"
+  },
+  {
+    "code": "GR400",
+    "name": "GR400 Tour des Volcans du Cantal (2020)",
+    "bbox": [
+      2.577188,
+      45.000814,
+      2.873585,
+      45.165722
+    ],
+    "file": "gr/GR400.geojson"
+  },
+  {
+    "code": "GR406",
+    "name": "GR406 Route Napoléon (2020)",
+    "bbox": [
+      5.945363,
+      43.664481,
+      6.920936,
+      44.199568
+    ],
+    "file": "gr/GR406.geojson"
+  },
+  {
+    "code": "GR41",
+    "name": "GR41 De Chârost (Cher) à St Désiré (Allier) (2019)",
+    "bbox": [
+      0.716242,
+      46.147048,
+      2.602844,
+      47.375588
+    ],
+    "file": "gr/GR41.geojson"
+  },
+  {
+    "code": "GR413",
+    "name": "GR413 De Bracieux au Canal du Berry (Loir-et-Cher) (2020)",
+    "bbox": [
+      1.541388,
+      47.273067,
+      1.747206,
+      47.547831
+    ],
+    "file": "gr/GR413.geojson"
+  },
+  {
+    "code": "GR42",
+    "name": "GR42 De Roquemaure au Grau-du-Roi (Gard) (2020)",
+    "bbox": [
+      4.139958,
+      43.537312,
+      4.79814,
+      45.442821
+    ],
+    "file": "gr/GR42.geojson"
+  },
+  {
+    "code": "GR420",
+    "name": "GR420 Tour du Haut-Vivarais (Ardèche) (2020)",
+    "bbox": [
+      4.176044,
+      44.78617,
+      4.798202,
+      45.150697
+    ],
+    "file": "gr/GR420.geojson"
+  },
+  {
+    "code": "GR422",
+    "name": "GR422 Sur les pas de Charles IX (2020)",
+    "bbox": [
+      4.809067,
+      44.931896,
+      5.262832,
+      45.809862
+    ],
+    "file": "gr/GR422.geojson"
+  },
+  {
+    "code": "GR429",
+    "name": "GR429 De Dieulefit (Drôme) à Viviers (Ardèche) (2019)",
+    "bbox": [
+      4.667802,
+      44.451872,
+      5.065102,
+      44.522755
+    ],
+    "file": "gr/GR429.geojson"
+  },
+  {
+    "code": "GR43",
+    "name": "GR43 Du Col des Faïsses à Ste Eulalie (Lozère) (2019)",
+    "bbox": [
+      3.47816,
+      44.24707,
+      3.665013,
+      44.796222
+    ],
+    "file": "gr/GR43.geojson"
+  },
+  {
+    "code": "GR430",
+    "name": "GR430 Chemin de Saint Régis (2020)",
+    "bbox": [
+      3.88261,
+      44.935391,
+      4.536207,
+      45.21357
+    ],
+    "file": "gr/GR430.geojson"
+  },
+  {
+    "code": "GR44",
+    "name": "GR44B De Vans (Ardèche) à Mialet (Gard) (2019)",
+    "bbox": [
+      3.413502,
+      44.111194,
+      4.155351,
+      44.495387
+    ],
+    "file": "gr/GR44.geojson"
+  },
+  {
+    "code": "GR440",
+    "name": "GR440 Tour de la montagne Limousine (Creuse, Corrèze) (2019)",
+    "bbox": [
+      1.793503,
+      45.447333,
+      2.162807,
+      45.766251
+    ],
+    "file": "gr/GR440.geojson"
+  },
+  {
+    "code": "GR441",
+    "name": "GR441 Tour de la Chaîne des Puys (Puy-de-Dôme) (2019)",
+    "bbox": [
+      2.836854,
+      45.634422,
+      3.037956,
+      45.905808
+    ],
+    "file": "gr/GR441.geojson"
+  },
+  {
+    "code": "GR46",
+    "name": "GR46 De Gaillac (Tarn) à Toulouse (Haute-Garonne) (2019)",
+    "bbox": [
+      0.682306,
+      43.604805,
+      2.440161,
+      47.372171
+    ],
+    "file": "gr/GR46.geojson"
+  },
+  {
+    "code": "GR461",
+    "name": "GR461 De Montignac à Terrasson-Lavilledieu (Dordogne) (2019)",
+    "bbox": [
+      1.163722,
+      45.041364,
+      1.306381,
+      45.129355
+    ],
+    "file": "gr/GR461.geojson"
+  },
+  {
+    "code": "GR463",
+    "name": "GR463 Traversée du Sud de l'Allier (Auvergne) (2020)",
+    "bbox": [
+      2.487264,
+      46.020401,
+      3.790808,
+      46.290465
+    ],
+    "file": "gr/GR463.geojson"
+  },
+  {
+    "code": "GR470",
+    "name": "GR470 Chemin des Gorges de l'Allier (2020)",
+    "bbox": [
+      3.36638,
+      44.58275,
+      3.904631,
+      45.293767
+    ],
+    "file": "gr/GR470.geojson"
+  },
+  {
+    "code": "GR48",
+    "name": "GR48 De L'Isle-Jourdain (Gers) à Angles-sur-l'Anglin (Vienne) (2019)",
+    "bbox": [
+      0.274117,
+      45.789289,
+      0.995916,
+      47.175283
+    ],
+    "file": "gr/GR48.geojson"
+  },
+  {
+    "code": "GR480",
+    "name": "GR480 De Turenne aux Gorges de la Cère (Corrèze) (2020)",
+    "bbox": [
+      1.582332,
+      44.974225,
+      2.026805,
+      45.067686
+    ],
+    "file": "gr/GR480.geojson"
+  },
+  {
+    "code": "GR49",
+    "name": "GR49 De Saint Raphaël (Var) à Rougon (Alpes de Haute-Provence) (2019)",
+    "bbox": [
+      6.397519,
+      43.423964,
+      6.813143,
+      43.799249
+    ],
+    "file": "gr/GR49.geojson"
+  },
+  {
+    "code": "GR5",
+    "name": "GR5 Du Luxembourg à la Méditerranée (2020)",
+    "bbox": [
+      5.936426,
+      43.71865,
+      7.449399,
+      49.451274
+    ],
+    "file": "gr/GR5.geojson"
+  },
+  {
+    "code": "GR50",
+    "name": "GR50 Tour du Parc National des Ecrins (Hautes-Alpes, Isère) (2019)",
+    "bbox": [
+      5.855673,
+      44.559996,
+      6.619585,
+      45.065563
+    ],
+    "file": "gr/GR50.geojson"
+  },
+  {
+    "code": "GR509",
+    "name": "GR509 Grande Traversée du Jura (2020)",
+    "bbox": [
+      5.721345,
+      45.851647,
+      6.95456,
+      47.45082
+    ],
+    "file": "gr/GR509.geojson"
+  },
+  {
+    "code": "GR51",
+    "name": "GR51 De Belgentier à La Madrague (Var, Bouches-du-Rhône) (2019)",
+    "bbox": [
+      5.349344,
+      43.140557,
+      7.522503,
+      43.81428
+    ],
+    "file": "gr/GR51.geojson"
+  },
+  {
+    "code": "GR510",
+    "name": "GR510 De Breil-sur-Roya à Villars-sur-Var (Alpes-Maritimes) (2020)",
+    "bbox": [
+      6.679683,
+      43.628822,
+      7.517,
+      44.002549
+    ],
+    "file": "gr/GR510.geojson"
+  },
+  {
+    "code": "GR52",
+    "name": "GR52 De St Dalmas de Valdeblore à Menton (Alpes-Maritimes) (2019)",
+    "bbox": [
+      7.186431,
+      43.785309,
+      7.522558,
+      44.141792
+    ],
+    "file": "gr/GR52.geojson"
+  },
+  {
+    "code": "GR53",
+    "name": "GR53 De Wissembourg au Donon (Bas-Rhin) (2019)",
+    "bbox": [
+      7.168359,
+      48.527652,
+      7.940916,
+      49.054598
+    ],
+    "file": "gr/GR53.geojson"
+  },
+  {
+    "code": "GR534",
+    "name": "GR534 Sentier Stanislas-Kléber (2020)",
+    "bbox": [
+      6.192847,
+      48.552644,
+      7.803543,
+      48.697914
+    ],
+    "file": "gr/GR534.geojson"
+  },
+  {
+    "code": "GR54",
+    "name": "GR54 Tour de l’Oisans et des Ecrins (Isère, Hautes-Alpes) (2020)",
+    "bbox": [
+      6.027748,
+      44.76007,
+      6.509106,
+      45.092908
+    ],
+    "file": "gr/GR54.geojson"
+  },
+  {
+    "code": "GR549",
+    "name": "GR549 De Vizille à L'Alpe-D'Huez (Isère) (2019)",
+    "bbox": [
+      5.77281,
+      45.068119,
+      6.116601,
+      45.224525
+    ],
+    "file": "gr/GR549.geojson"
+  },
+  {
+    "code": "GR55",
+    "name": "GR55 De Tignes à Modane (Savoie) (2019)",
+    "bbox": [
+      6.644717,
+      45.202261,
+      6.922134,
+      45.466656
+    ],
+    "file": "gr/GR55.geojson"
+  },
+  {
+    "code": "GR56",
+    "name": "GR56 Tour de l'Ubaye (Alpes-de-Haute-Provence, Alpes-Maritimes) (2020)",
+    "bbox": [
+      6.500844,
+      44.274219,
+      6.885589,
+      44.52649
+    ],
+    "file": "gr/GR56.geojson"
+  },
+  {
+    "code": "GR57",
+    "name": "GR57 Tour du Mont Thabor (Hautes-Alpes) (2019)",
+    "bbox": [
+      6.465542,
+      44.973829,
+      6.66128,
+      45.121007
+    ],
+    "file": "gr/GR57.geojson"
+  },
+  {
+    "code": "GR570",
+    "name": "GR570 Tour du Pays des Trois Frontières (2020)",
+    "bbox": [
+      5.645524,
+      49.472959,
+      5.888388,
+      49.597197
+    ],
+    "file": "gr/GR570.geojson"
+  },
+  {
+    "code": "GR58",
+    "name": "GR58 Tour du Queyras (Hautes-Alpes) (2019)",
+    "bbox": [
+      6.710137,
+      44.668383,
+      6.992238,
+      44.84294
+    ],
+    "file": "gr/GR58.geojson"
+  },
+  {
+    "code": "GR59",
+    "name": "GR59 De Silley-Bléfond (Doubs) à Mesnay (Jura) (2020)",
+    "bbox": [
+      5.325862,
+      45.653312,
+      6.845834,
+      47.829622
+    ],
+    "file": "gr/GR59.geojson"
+  },
+  {
+    "code": "GR6",
+    "name": "GR6 De Espalion (Aveyron) à St Pierre-des-Tripiers (Lozère) (2020)",
+    "bbox": [
+      -0.249652,
+      43.672427,
+      6.803759,
+      44.943782
+    ],
+    "file": "gr/GR6.geojson"
+  },
+  {
+    "code": "GR60",
+    "name": "GR60 Du Signal de Mailhebiau (Lozère-Aveyron) à St Mathieu-de-Tréviers (Hérault) (2020)",
+    "bbox": [
+      3.065831,
+      43.760116,
+      3.874674,
+      44.578868
+    ],
+    "file": "gr/GR60.geojson"
+  },
+  {
+    "code": "GR61",
+    "name": "GR61 De Anduze au Col de l'Asclier (Gard-Cévennes) (2019)",
+    "bbox": [
+      3.744366,
+      44.055614,
+      3.98724,
+      44.117832
+    ],
+    "file": "gr/GR61.geojson"
+  },
+  {
+    "code": "GR62",
+    "name": "GR62 De Bonperrier (Gard) à Conques (Aveyron) (2020)",
+    "bbox": [
+      2.395641,
+      44.076225,
+      3.696213,
+      44.59912
+    ],
+    "file": "gr/GR62.geojson"
+  },
+  {
+    "code": "GR620",
+    "name": "GR620 De St Côme-d'Olt à Inières (Aveyron) (2019)",
+    "bbox": [
+      2.643832,
+      44.30801,
+      2.823744,
+      44.514526
+    ],
+    "file": "gr/GR620.geojson"
+  },
+  {
+    "code": "GR63",
+    "name": "GR63 De Villeneuve-lez-Avignon au col de la Cabane-Vieille (Gard) (2019)",
+    "bbox": [
+      3.80171,
+      43.89182,
+      4.79127,
+      44.07499
+    ],
+    "file": "gr/GR63.geojson"
+  },
+  {
+    "code": "GR636",
+    "name": "GR636 De Monbazillac (Dordogne) à Lacapelle-Biron (Lot-et-Garonne) (2019)",
+    "bbox": [
+      0.461812,
+      44.530668,
+      0.895036,
+      44.787556
+    ],
+    "file": "gr/GR636.geojson"
+  },
+  {
+    "code": "GR64",
+    "name": "GR64 De Rocamadour (Lot) à Les Eyzies-de-Tayac-Sireuil (Dordogne) (2019)",
+    "bbox": [
+      1.022023,
+      44.732627,
+      1.61611,
+      44.936177
+    ],
+    "file": "gr/GR64.geojson"
+  },
+  {
+    "code": "GR646",
+    "name": "GR646 De Périgueux (Dordogne) à Ste-Foy-la-Grande (Gironde) (2019)",
+    "bbox": [
+      0.129158,
+      44.841055,
+      0.718846,
+      45.209125
+    ],
+    "file": "gr/GR646.geojson"
+  },
+  {
+    "code": "GR65",
+    "name": "GR65 De Aire-sur-l'Adour (Landes) à Larribar-Sorhapuru (Pyrénées-Atlantiques) (2019)",
+    "bbox": [
+      -1.319336,
+      43.006658,
+      6.12704,
+      46.14277
+    ],
+    "file": "gr/GR65.geojson"
+  },
+  {
+    "code": "GR651",
+    "name": "GR651 De Beduer à Bouziès (Lot) (2019)",
+    "bbox": [
+      1.641694,
+      44.478947,
+      1.95113,
+      44.610046
+    ],
+    "file": "gr/GR651.geojson"
+  },
+  {
+    "code": "GR652",
+    "name": "GR652 Voie de Rocamadour (Saint-Jacques-de-Compostelle) (2020)",
+    "bbox": [
+      0.498014,
+      43.982608,
+      2.19336,
+      44.987385
+    ],
+    "file": "gr/GR652.geojson"
+  },
+  {
+    "code": "GR653",
+    "name": "GR653 De Castanet-le-Haut (Hérault) à Dourgne (Tarn) (2019)",
+    "bbox": [
+      -0.620835,
+      42.795821,
+      7.529926,
+      44.93141
+    ],
+    "file": "gr/GR653.geojson"
+  },
+  {
+    "code": "GR654",
+    "name": "GR654 (EST) De Castelmoron-sur-Lot (Lot-et-Garonne) à Montréal (Gers) (2019)",
+    "bbox": [
+      -1.036444,
+      43.298952,
+      4.675069,
+      49.969621
+    ],
+    "file": "gr/GR654.geojson"
+  },
+  {
+    "code": "GR655",
+    "name": "GR655 De Belin-Béliet (Gironde) à Lesperon (Landes) (2020)",
+    "bbox": [
+      -1.096239,
+      43.298951,
+      4.04779,
+      50.329841
+    ],
+    "file": "gr/GR655.geojson"
+  },
+  {
+    "code": "GR66",
+    "name": "GR66 Tour du Mont Aigoual (Lozère, Gard) (2019)",
+    "bbox": [
+      3.423194,
+      44.022301,
+      3.630358,
+      44.190325
+    ],
+    "file": "gr/GR66.geojson"
+  },
+  {
+    "code": "GR67",
+    "name": "GR67 Tour du Pays Cévenol (Gard, Lozère) (2019)",
+    "bbox": [
+      3.605253,
+      44.006917,
+      3.987315,
+      44.265485
+    ],
+    "file": "gr/GR67.geojson"
+  },
+  {
+    "code": "GR670",
+    "name": "GR670 Chemin Urbain V. De Florac (Lozère) à Lézan (Gard) (2020)",
+    "bbox": [
+      3.030092,
+      43.93923,
+      4.806401,
+      44.662168
+    ],
+    "file": "gr/GR670.geojson"
+  },
+  {
+    "code": "GR68",
+    "name": "GR68 Tour du Mont Lozère (Gard, Lozère) (2019)",
+    "bbox": [
+      3.580148,
+      44.311857,
+      3.933105,
+      44.495403
+    ],
+    "file": "gr/GR68.geojson"
+  },
+  {
+    "code": "GR7",
+    "name": "GR7 De Mazamet (Tarn) à Mirepoix (Ariège) (2020)",
+    "bbox": [
+      1.725755,
+      42.503189,
+      6.834816,
+      48.149845
+    ],
+    "file": "gr/GR7.geojson"
+  },
+  {
+    "code": "GR70",
+    "name": "GR70 De La Bastide-Puylaurent (Lozère) à Alès (Gard) (2019)",
+    "bbox": [
+      3.586162,
+      44.102421,
+      4.072457,
+      45.043476
+    ],
+    "file": "gr/GR70.geojson"
+  },
+  {
+    "code": "GR700",
+    "name": "GR700 Voie Régordane. Du Puy-en-Velay (Haute-Loire) à Chamborigaud (Gard) (2020)",
+    "bbox": [
+      3.825931,
+      43.677116,
+      4.429689,
+      45.045565
+    ],
+    "file": "gr/GR700.geojson"
+  },
+  {
+    "code": "GR703",
+    "name": "GR703 De Toul (Meurthe-et-Moselle) à Fronville (Haute-Marne) (2020)",
+    "bbox": [
+      4.297671,
+      47.970803,
+      5.890258,
+      48.674647
+    ],
+    "file": "gr/GR703.geojson"
+  },
+  {
+    "code": "GR71",
+    "name": "GR71 De l'Espérou (Gard) au Col de Fontfroide (Hérault) (2020)",
+    "bbox": [
+      2.839794,
+      43.598629,
+      3.563438,
+      44.092335
+    ],
+    "file": "gr/GR71.geojson"
+  },
+  {
+    "code": "GR714",
+    "name": "GR714 De Domrémy-la-Pucelle à Dombrot-le-Sec (Vosges) (2017)",
+    "bbox": [
+      5.13849,
+      48.140087,
+      5.974696,
+      48.77879
+    ],
+    "file": "gr/GR714.geojson"
+  },
+  {
+    "code": "GR72",
+    "name": "GR72 Du Col du Bez (Ardèche) à Barre-des-Cévennes (Lozère) (2020)",
+    "bbox": [
+      3.658341,
+      44.242167,
+      4.05323,
+      44.638398
+    ],
+    "file": "gr/GR72.geojson"
+  },
+  {
+    "code": "GR73",
+    "name": "GR73 De Chantemerle (Haute-Loire) à Fontaulière (Ardèche) (2019)",
+    "bbox": [
+      4.167707,
+      44.731629,
+      4.230827,
+      44.937982
+    ],
+    "file": "gr/GR73.geojson"
+  },
+  {
+    "code": "GR74",
+    "name": "GR74 De Saint Maurice-Navacelles au Jouquet (Hérault) (2020)",
+    "bbox": [
+      3.442212,
+      43.734356,
+      3.578283,
+      43.846509
+    ],
+    "file": "gr/GR74.geojson"
+  },
+  {
+    "code": "GR76",
+    "name": "GR76 De Cluny (Saône-et-Loire) à Affoux (Rhône) (2019)",
+    "bbox": [
+      4.390848,
+      45.846383,
+      4.853704,
+      47.138651
+    ],
+    "file": "gr/GR76.geojson"
+  },
+  {
+    "code": "GR77",
+    "name": "GR77 Du Saut de Vézoles (Hérault) au Signal de l'Alaric (Aude) (2019)",
+    "bbox": [
+      2.624711,
+      43.147247,
+      2.872868,
+      43.551764
+    ],
+    "file": "gr/GR77.geojson"
+  },
+  {
+    "code": "GR78",
+    "name": "GR78 De Pamiers (Ariège) à Génos (Hautes-Pyrénées) (2019)",
+    "bbox": [
+      -1.172658,
+      42.925949,
+      2.358218,
+      43.264224
+    ],
+    "file": "gr/GR78.geojson"
+  },
+  {
+    "code": "GR782",
+    "name": "GR782 Randonnée de Lourdes (Hautes-Pyrénées) à Artiguelouve (Pyrénées-Atlantiques)",
+    "bbox": [
+      -0.465547,
+      43.097841,
+      -0.048383,
+      43.331071
+    ],
+    "file": "gr/GR782.geojson"
+  },
+  {
+    "code": "GR8",
+    "name": "GR8 De Urt à Sare (Pyrénées-Atlantiques) (2019)",
+    "bbox": [
+      -2.247839,
+      43.312626,
+      -1.082754,
+      47.268953
+    ],
+    "file": "gr/GR8.geojson"
+  },
+  {
+    "code": "GR86",
+    "name": "GR86 De Toulouse à Aurignac (Haute-Garonne) (2019)",
+    "bbox": [
+      0.559811,
+      42.791295,
+      1.442901,
+      43.622612
+    ],
+    "file": "gr/GR86.geojson"
+  },
+  {
+    "code": "GR861",
+    "name": "GR861 Via Garona De Toulouse à St-Bertrand-de-Comminges (Haute-Garonne) (2020)",
+    "bbox": [
+      0.559788,
+      43.026665,
+      1.440513,
+      43.600933
+    ],
+    "file": "gr/GR861.geojson"
+  },
+  {
+    "code": "GR9",
+    "name": "GR9 De Mijoux (Ain) à Yenne (Savoie) (2020)",
+    "bbox": [
+      5.040569,
+      43.240349,
+      6.578976,
+      46.47697
+    ],
+    "file": "gr/GR9.geojson"
+  },
+  {
+    "code": "GR90",
+    "name": "GR90 Du Lavandou à Notre Dame des Anges (Var) (2019)",
+    "bbox": [
+      6.294449,
+      43.139485,
+      6.394345,
+      43.281349
+    ],
+    "file": "gr/GR90.geojson"
+  },
+  {
+    "code": "GR91",
+    "name": "GR91 De St-Nizier-du-Moucherotte (Isère) à Valdrôme (Drôme) (2020)",
+    "bbox": [
+      5.127523,
+      43.921883,
+      5.639262,
+      45.171305
+    ],
+    "file": "gr/GR91.geojson"
+  },
+  {
+    "code": "GR92",
+    "name": "GR92 De Apt à Sannes (Vaucluse) (2019)",
+    "bbox": [
+      5.400772,
+      43.757892,
+      5.503136,
+      43.874912
+    ],
+    "file": "gr/GR92.geojson"
+  },
+  {
+    "code": "GR93",
+    "name": "GR93 Traversée du Vercors (2020)",
+    "bbox": [
+      5.108982,
+      44.425659,
+      6.070266,
+      44.912639
+    ],
+    "file": "gr/GR93.geojson"
+  },
+  {
+    "code": "GR94",
+    "name": "GR94 De Vaunières au Col des Praux (Hautes-Alpes) (2019)",
+    "bbox": [
+      5.568173,
+      44.408546,
+      5.869111,
+      44.675352
+    ],
+    "file": "gr/GR94.geojson"
+  },
+  {
+    "code": "GR95",
+    "name": "GR95 De Saillans à Lus-la-Croix-Haute (Drôme) (2019)",
+    "bbox": [
+      5.194322,
+      44.635281,
+      5.704379,
+      44.755996
+    ],
+    "file": "gr/GR95.geojson"
+  },
+  {
+    "code": "GR96",
+    "name": "GR96 De Samoëns (Haute-Savoie) à Epernay (Savoie) (2020)",
+    "bbox": [
+      5.88408,
+      45.452695,
+      6.774684,
+      46.084019
+    ],
+    "file": "gr/GR96.geojson"
+  },
+  {
+    "code": "GR97",
+    "name": "GR97 Tour du Luberon (Vaucluse, Alpes-de-Haute-Provence) (2019)",
+    "bbox": [
+      5.114552,
+      43.765251,
+      5.650842,
+      43.951199
+    ],
+    "file": "gr/GR97.geojson"
+  },
+  {
+    "code": "GR98",
+    "name": "GR98 De La Madrague au Col du Pilon (Bouches-du-Rhône) (2019)",
+    "bbox": [
+      5.349382,
+      43.20407,
+      5.770032,
+      43.327445
+    ],
+    "file": "gr/GR98.geojson"
+  },
+  {
+    "code": "GR99",
+    "name": "GR99 De Revest-les-Eaux aux Gorges du Verdon (Var) (2020)",
+    "bbox": [
+      5.86067,
+      43.163338,
+      6.346551,
+      43.777404
+    ],
+    "file": "gr/GR99.geojson"
+  },
+  {
+    "code": "GRP",
+    "name": "GRP Le Cévenol (Lozère - Ardèche - Gard) (2020)",
+    "bbox": [
+      3.905832,
+      44.34052,
+      4.136903,
+      44.607258
+    ],
+    "file": "gr/GRP.geojson"
+  },
+  {
+    "code": "GRR1",
+    "name": "GRR1 Tour du Piton des Neiges (Ile de la Réunion) (2020)",
+    "bbox": [
+      55.423466,
+      -21.131826,
+      55.536718,
+      -21.043238
+    ],
+    "file": "gr/GRR1.geojson"
+  },
+  {
+    "code": "GRR2",
+    "name": "GRR2 De St Denis à Le Baril (St Philippe) (Ile de la Réunion) (2020)",
+    "bbox": [
+      55.373722,
+      -21.370799,
+      55.717878,
+      -20.896797
+    ],
+    "file": "gr/GRR2.geojson"
+  },
+  {
+    "code": "GRR3",
+    "name": "GRR3 Tour du cirque de Mafate (Ile de la Réunion)",
+    "bbox": [
+      55.390601,
+      -21.103704,
+      55.455967,
+      -21.019512
+    ],
+    "file": "gr/GRR3.geojson"
+  },
+  {
+    "code": "tour-20190106194431-qhrk2",
+    "name": "20190106194431-qhrk2",
+    "bbox": [
+      6.364346,
+      43.664481,
+      6.920936,
+      43.952518
+    ],
+    "file": "gr/tour-20190106194431-qhrk2.geojson"
+  },
+  {
+    "code": "tour-tour-aux-marches-de-meuse",
+    "name": "Tour aux Marches de Meuse (Meuse) (2020)",
+    "bbox": [
+      5.089516,
+      49.342446,
+      5.458873,
+      49.521986
+    ],
+    "file": "gr/tour-tour-aux-marches-de-meuse.geojson"
+  },
+  {
+    "code": "tour-tour-de-gascogne",
+    "name": "Tour de Gascogne (Gers) (2020)",
+    "bbox": [
+      0.375329,
+      43.655492,
+      0.668741,
+      44.010268
+    ],
+    "file": "gr/tour-tour-de-gascogne.geojson"
+  },
+  {
+    "code": "tour-tour-de-la-haute-chalosse",
+    "name": "Tour de la Haute Chalosse (Landes) (2020)",
+    "bbox": [
+      -0.838383,
+      43.667438,
+      -0.645915,
+      43.748667
+    ],
+    "file": "gr/tour-tour-de-la-haute-chalosse.geojson"
+  },
+  {
+    "code": "tour-tour-de-la-haute-valle-de-la-cze",
+    "name": "Tour de la Haute Vallée de la Cèze (Gard-Ardèche) (2019)",
+    "bbox": [
+      3.979347,
+      44.299442,
+      4.077557,
+      44.41539
+    ],
+    "file": "gr/tour-tour-de-la-haute-valle-de-la-cze.geojson"
+  },
+  {
+    "code": "tour-tour-de-la-mandragore",
+    "name": "Tour de la Mandragore (Charente, Haute-Vienne) (2020)",
+    "bbox": [
+      0.683239,
+      45.971926,
+      0.928543,
+      46.109687
+    ],
+    "file": "gr/tour-tour-de-la-mandragore.geojson"
+  },
+  {
+    "code": "tour-tour-de-la-mayenne-profonde",
+    "name": "Tour de la Mayenne profonde (Mayenne, Sarthe) (2019)",
+    "bbox": [
+      -0.424498,
+      48.167982,
+      -0.048042,
+      48.492815
+    ],
+    "file": "gr/tour-tour-de-la-mayenne-profonde.geojson"
+  },
+  {
+    "code": "tour-tour-de-la-montagne-ardchoise",
+    "name": "Tour de la Montagne Ardéchoise (Ardèche) (2020)",
+    "bbox": [
+      3.894809,
+      44.519073,
+      4.289179,
+      44.869245
+    ],
+    "file": "gr/tour-tour-de-la-montagne-ardchoise.geojson"
+  },
+  {
+    "code": "tour-tour-de-la-reine-margot",
+    "name": "Tour de la Reine Margot (Puy-de-Dôme) (2017)",
+    "bbox": [
+      3.244513,
+      45.526664,
+      3.406449,
+      45.612456
+    ],
+    "file": "gr/tour-tour-de-la-reine-margot.geojson"
+  },
+  {
+    "code": "tour-tour-de-la-sologne",
+    "name": "Tour de la Sologne (Loiret, Cher, Loir-et-Cher) (2020)",
+    "bbox": [
+      1.47494,
+      47.542158,
+      2.373762,
+      47.717842
+    ],
+    "file": "gr/tour-tour-de-la-sologne.geojson"
+  },
+  {
+    "code": "tour-tour-de-la-valle-de-lain-au-pays-de-cerdon",
+    "name": "Tour de la vallée de l'Ain au Pays de Cerdon (Ain) (2019)",
+    "bbox": [
+      5.376366,
+      46.01509,
+      5.496505,
+      46.118861
+    ],
+    "file": "gr/tour-tour-de-la-valle-de-lain-au-pays-de-cerdon.geojson"
+  },
+  {
+    "code": "tour-tour-de-la-valle-du-galeizon",
+    "name": "Tour de la Vallée du Galeizon (Gard-Lozère) (2019)",
+    "bbox": [
+      3.854747,
+      44.13141,
+      4.057702,
+      44.226618
+    ],
+    "file": "gr/tour-tour-de-la-valle-du-galeizon.geojson"
+  },
+  {
+    "code": "tour-tour-de-la-valle-du-luech",
+    "name": "Tour de la Vallée du Luech (Gard-Lozère) (2020)",
+    "bbox": [
+      3.816103,
+      44.282041,
+      3.974381,
+      44.35728
+    ],
+    "file": "gr/tour-tour-de-la-valle-du-luech.geojson"
+  },
+  {
+    "code": "tour-tour-de-la-vienne-limousine",
+    "name": "Tour de la Vienne Limousine (Vienne) (2020)",
+    "bbox": [
+      0.685358,
+      46.23409,
+      0.940516,
+      46.420861
+    ],
+    "file": "gr/tour-tour-de-la-vienne-limousine.geojson"
+  },
+  {
+    "code": "tour-tour-de-la-xaintrie-blanche",
+    "name": "Tour de la Xaintrie Blanche (Corrèze) (2020)",
+    "bbox": [
+      1.99433,
+      45.066756,
+      2.131958,
+      45.187376
+    ],
+    "file": "gr/tour-tour-de-la-xaintrie-blanche.geojson"
+  },
+  {
+    "code": "tour-tour-de-la-xaintrie-noire",
+    "name": "Tour de la Xaintrie Noire (Corrèze) (2020)",
+    "bbox": [
+      1.928242,
+      45.001401,
+      2.101496,
+      45.107545
+    ],
+    "file": "gr/tour-tour-de-la-xaintrie-noire.geojson"
+  },
+  {
+    "code": "tour-tour-de-lomois",
+    "name": "Tour de l'Omois (Aisne, Marne, Oise) (2020)",
+    "bbox": [
+      3.104192,
+      48.878234,
+      3.692157,
+      49.275323
+    ],
+    "file": "gr/tour-tour-de-lomois.geojson"
+  },
+  {
+    "code": "tour-tour-de-margeride",
+    "name": "Tour de Margeride (Lozère) (2019)",
+    "bbox": [
+      3.298624,
+      44.501168,
+      3.92372,
+      44.817523
+    ],
+    "file": "gr/tour-tour-de-margeride.geojson"
+  },
+  {
+    "code": "tour-tour-de-robe-de-bure-et-cotte-de-mailles",
+    "name": "Tour de Robe de Bure et Cotte de Mailles (Haute-Loire) (2020)",
+    "bbox": [
+      3.366373,
+      45.03235,
+      3.713923,
+      45.32409
+    ],
+    "file": "gr/tour-tour-de-robe-de-bure-et-cotte-de-mailles.geojson"
+  },
+  {
+    "code": "tour-tour-des-baronnies-de-bigorre",
+    "name": "Tour des Baronnies de Bigorre (Hautes-Pyrénées) (2020)",
+    "bbox": [
+      0.187165,
+      42.992195,
+      0.352108,
+      43.109322
+    ],
+    "file": "gr/tour-tour-des-baronnies-de-bigorre.geojson"
+  },
+  {
+    "code": "tour-tour-des-baronnies-provenales",
+    "name": "Tour des Baronnies provençales (Drôme) (2020)",
+    "bbox": [
+      5.21911,
+      44.181962,
+      5.73618,
+      44.474558
+    ],
+    "file": "gr/tour-tour-des-baronnies-provenales.geojson"
+  },
+  {
+    "code": "tour-tour-des-cascades-landes-et-tourbires",
+    "name": "Tour des Cascades, Landes et Tourbières (Creuse) (2020)",
+    "bbox": [
+      1.754701,
+      45.844153,
+      1.903553,
+      45.95208
+    ],
+    "file": "gr/tour-tour-des-cascades-landes-et-tourbires.geojson"
+  },
+  {
+    "code": "tour-tour-des-gorges-de-la-vzre",
+    "name": "Tour des Gorges de la Vézère (Corrèze) (2020)",
+    "bbox": [
+      1.435615,
+      45.275714,
+      1.525321,
+      45.38253
+    ],
+    "file": "gr/tour-tour-des-gorges-de-la-vzre.geojson"
+  },
+  {
+    "code": "tour-tour-des-marches-de-gtine",
+    "name": "Tour des Marches de Gâtine (Deux-Sèvres, Vienne) (2020)",
+    "bbox": [
+      -0.4186,
+      46.457607,
+      0.088334,
+      46.793794
+    ],
+    "file": "gr/tour-tour-des-marches-de-gtine.geojson"
+  },
+  {
+    "code": "tour-tour-des-matres-sonneurs",
+    "name": "Tour des Maîtres Sonneurs (Indre-Cher-Allier) (2020)",
+    "bbox": [
+      1.963282,
+      46.359992,
+      2.473602,
+      46.662136
+    ],
+    "file": "gr/tour-tour-des-matres-sonneurs.geojson"
+  },
+  {
+    "code": "tour-tour-des-monts-aubrac",
+    "name": "Tour des Monts Aubrac (Lozère-Aveyron-Cantal) (2020)",
+    "bbox": [
+      2.84699,
+      44.55772,
+      3.284456,
+      44.836769
+    ],
+    "file": "gr/tour-tour-des-monts-aubrac.geojson"
+  },
+  {
+    "code": "tour-tour-des-monts-dambazac",
+    "name": "Tour des Monts d'Ambazac (Haute-Vienne) (2020)",
+    "bbox": [
+      1.245634,
+      45.93697,
+      1.544545,
+      46.097668
+    ],
+    "file": "gr/tour-tour-des-monts-dambazac.geojson"
+  },
+  {
+    "code": "tour-tour-des-monts-de-blond",
+    "name": "Tour des Monts de Blond (Haute-Vienne) (2020)",
+    "bbox": [
+      0.935314,
+      45.907875,
+      1.108334,
+      46.045283
+    ],
+    "file": "gr/tour-tour-des-monts-de-blond.geojson"
+  },
+  {
+    "code": "tour-tour-des-monts-du-lyonnais",
+    "name": "Tour des Monts du Lyonnais (Rhône-Loire) (2020)",
+    "bbox": [
+      4.436803,
+      45.570185,
+      4.657325,
+      45.826408
+    ],
+    "file": "gr/tour-tour-des-monts-du-lyonnais.geojson"
+  },
+  {
+    "code": "tour-tour-des-petites-roches",
+    "name": "Tour des Petites Roches (Isère) (2020)",
+    "bbox": [
+      5.833924,
+      45.280743,
+      5.924369,
+      45.359958
+    ],
+    "file": "gr/tour-tour-des-petites-roches.geojson"
+  },
+  {
+    "code": "tour-tour-du-bacon-du-valromey",
+    "name": "Tour du Bacon du Valromey (Ain) (2019)",
+    "bbox": [
+      5.628769,
+      45.855653,
+      5.739714,
+      46.072829
+    ],
+    "file": "gr/tour-tour-du-bacon-du-valromey.geojson"
+  },
+  {
+    "code": "tour-tour-du-causse-mjean",
+    "name": "Tour du Causse Méjean (Lozère) (2019)",
+    "bbox": [
+      3.20715,
+      44.179311,
+      3.585192,
+      44.345075
+    ],
+    "file": "gr/tour-tour-du-causse-mjean.geojson"
+  },
+  {
+    "code": "tour-tour-du-causse-sauveterre",
+    "name": "Tour du Causse Sauveterre (Lozère-Aveyron) (2020)",
+    "bbox": [
+      3.129265,
+      44.198449,
+      3.525109,
+      44.464802
+    ],
+    "file": "gr/tour-tour-du-causse-sauveterre.geojson"
+  },
+  {
+    "code": "tour-tour-du-chassezac",
+    "name": "Tour du Chassezac (Lozère) (2020)",
+    "bbox": [
+      3.87868,
+      44.429569,
+      3.985645,
+      44.524419
+    ],
+    "file": "gr/tour-tour-du-chassezac.geojson"
+  },
+  {
+    "code": "tour-tour-du-larzac-mridional",
+    "name": "Tour du Larzac Méridional (Hérault-Gard) (2019)",
+    "bbox": [
+      3.31477,
+      43.743558,
+      3.578267,
+      43.911687
+    ],
+    "file": "gr/tour-tour-du-larzac-mridional.geojson"
+  },
+  {
+    "code": "tour-tour-du-mont-blanc",
+    "name": "Tour du Mont-Blanc (Haute-Savoie, Suisse et Italie) (2020)",
+    "bbox": [
+      6.702473,
+      45.696161,
+      7.128364,
+      46.058426
+    ],
+    "file": "gr/tour-tour-du-mont-blanc.geojson"
+  },
+  {
+    "code": "tour-tour-du-morvan",
+    "name": "Tour du Morvan (Nièvre-Yonne-Côte-d'Or) (2017)",
+    "bbox": [
+      3.887141,
+      46.877032,
+      4.177138,
+      47.396503
+    ],
+    "file": "gr/tour-tour-du-morvan.geojson"
+  },
+  {
+    "code": "tour-tour-du-parc-rgional-boulonnais",
+    "name": "Tour du Parc Régional Boulonnais (Pas de Calais) (2020)",
+    "bbox": [
+      1.621524,
+      50.64384,
+      1.908563,
+      50.930459
+    ],
+    "file": "gr/tour-tour-du-parc-rgional-boulonnais.geojson"
+  },
+  {
+    "code": "tour-tour-du-pays-dauge",
+    "name": "Tour du Pays d'Auge (Calvados) (2019)",
+    "bbox": [
+      -0.049058,
+      48.963414,
+      0.410485,
+      49.422473
+    ],
+    "file": "gr/tour-tour-du-pays-dauge.geojson"
+  },
+  {
+    "code": "tour-tour-du-pays-dauge-ornais",
+    "name": "Tour du Pays d'Auge Ornais (Orne) (2019)",
+    "bbox": [
+      -0.050199,
+      48.675242,
+      0.341421,
+      48.952
+    ],
+    "file": "gr/tour-tour-du-pays-dauge-ornais.geojson"
+  },
+  {
+    "code": "tour-tour-du-pays-davre-et-diton",
+    "name": "Tour du Pays d'Avre et d'Iton (Eure) (2019)",
+    "bbox": [
+      0.912357,
+      48.726327,
+      1.14941,
+      48.871665
+    ],
+    "file": "gr/tour-tour-du-pays-davre-et-diton.geojson"
+  },
+  {
+    "code": "tour-tour-du-pays-de-caux-valle-de-seine",
+    "name": "Tour du Pays de Caux vallée de Seine (Seine-Maritime) (2019)",
+    "bbox": [
+      0.446552,
+      49.486783,
+      0.744087,
+      49.573359
+    ],
+    "file": "gr/tour-tour-du-pays-de-caux-valle-de-seine.geojson"
+  },
+  {
+    "code": "tour-tour-du-pays-de-dieulefit",
+    "name": "Tour du Pays de Dieulefit (Drôme) (2020)",
+    "bbox": [
+      4.934781,
+      44.430052,
+      5.178996,
+      44.58004
+    ],
+    "file": "gr/tour-tour-du-pays-de-dieulefit.geojson"
+  },
+  {
+    "code": "tour-tour-du-pays-de-la-brenne",
+    "name": "Tour du Pays de la Brenne (Vienne, Indre, Indre-et-Loire) (2020)",
+    "bbox": [
+      0.876912,
+      46.410501,
+      1.478857,
+      46.823987
+    ],
+    "file": "gr/tour-tour-du-pays-de-la-brenne.geojson"
+  },
+  {
+    "code": "tour-tour-du-pays-de-la-risle-charentonne",
+    "name": "Tour du Pays de la Risle Charentonne (Eure, Orne) (2019)",
+    "bbox": [
+      0.452815,
+      48.801896,
+      0.781031,
+      49.087847
+    ],
+    "file": "gr/tour-tour-du-pays-de-la-risle-charentonne.geojson"
+  },
+  {
+    "code": "tour-tour-du-pays-de-st-flour",
+    "name": "Tour du Pays de St Flour (Cantal, Haute-Loire et Lozère) (2020)",
+    "bbox": [
+      2.862194,
+      44.823689,
+      3.411585,
+      45.089279
+    ],
+    "file": "gr/tour-tour-du-pays-de-st-flour.geojson"
+  },
+  {
+    "code": "tour-tour-du-pays-de-valenay",
+    "name": "Tour du Pays de Valençay (Indre, Loir-et-Cher) (2020)",
+    "bbox": [
+      1.190227,
+      46.90595,
+      1.771301,
+      47.271899
+    ],
+    "file": "gr/tour-tour-du-pays-de-valenay.geojson"
+  },
+  {
+    "code": "tour-tour-du-pays-douche",
+    "name": "Tour du Pays d'Ouche (Eure) (2019)",
+    "bbox": [
+      0.692581,
+      48.740197,
+      0.953037,
+      48.993726
+    ],
+    "file": "gr/tour-tour-du-pays-douche.geojson"
+  },
+  {
+    "code": "tour-tour-du-plateau-de-millevaches",
+    "name": "Tour du plateau de Millevaches (Corrèze) (2019)",
+    "bbox": [
+      2.005286,
+      45.615504,
+      2.162829,
+      45.710314
+    ],
+    "file": "gr/tour-tour-du-plateau-de-millevaches.geojson"
+  },
+  {
+    "code": "tour-tour-du-revermont",
+    "name": "Tour du Revermont (Ain, Jura) (2019)",
+    "bbox": [
+      5.320055,
+      46.074711,
+      5.46168,
+      46.386971
+    ],
+    "file": "gr/tour-tour-du-revermont.geojson"
+  },
+  {
+    "code": "tour-tour-du-tanargue",
+    "name": "Tour du Tanargue (Ardèche) (2020)",
+    "bbox": [
+      4.049936,
+      44.530964,
+      4.296072,
+      44.616425
+    ],
+    "file": "gr/tour-tour-du-tanargue.geojson"
+  },
+  {
+    "code": "tour-tour-entre-dordogne-et-ventadour",
+    "name": "Tour entre Dordogne et Ventadour (Corrèze) (2020)",
+    "bbox": [
+      1.990431,
+      45.213675,
+      2.227362,
+      45.331082
+    ],
+    "file": "gr/tour-tour-entre-dordogne-et-ventadour.geojson"
+  },
+  {
+    "code": "tour-traverse-de-la-dombes",
+    "name": "Traversée de la Dombes (Rhône-Ain) (2020)",
+    "bbox": [
+      4.58379,
+      45.877934,
+      5.414242,
+      45.971027
+    ],
+    "file": "gr/tour-traverse-de-la-dombes.geojson"
+  },
+  {
+    "code": "tour-traverse-de-paris",
+    "name": "Traversée de Paris (Nord-Sud) (2020)",
+    "bbox": [
+      2.261651,
+      48.821155,
+      2.406544,
+      48.897422
+    ],
+    "file": "gr/tour-traverse-de-paris.geojson"
+  }
+]
